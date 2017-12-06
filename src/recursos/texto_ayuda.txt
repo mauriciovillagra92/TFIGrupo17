@@ -1,0 +1,2 @@
+Alt+p = Crear Pedido
+Alt+s = Salir de Ventana
