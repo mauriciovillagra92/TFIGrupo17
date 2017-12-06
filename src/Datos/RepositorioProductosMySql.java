@@ -6,8 +6,6 @@
 package Datos;
 
 import Main.Negocio;
-import Main.NegocioEnMemoria;
-import Modelo.Mozo;
 import Modelo.Producto;
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.ResultSet;
