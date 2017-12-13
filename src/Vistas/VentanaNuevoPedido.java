@@ -5,6 +5,7 @@
  */
 package Vistas;
 
+import Datos.NegocioMySQL;
 import Main.NegocioEnMemoria;
 import Modelo.ControladorRegistrarPedido;
 import Modelo.IVentanaPedido;
@@ -27,7 +28,7 @@ public class VentanaNuevoPedido extends javax.swing.JDialog implements IVentanaP
     
     public VentanaNuevoPedido(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
-        controlador = new ControladorRegistrarPedido(new NegocioEnMemoria());
+        controlador = new ControladorRegistrarPedido(new NegocioMySQL());
         setControlador(controlador);
         
         initComponents();

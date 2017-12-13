@@ -70,8 +70,8 @@ public class RepositorioProductosMySql
     }
 
     
-    public Producto select(Integer id)
-    {
+    public Producto buscarProducto(Integer id)
+     {
         String consulta = "SELECT * from producto where id == "+String.valueOf(id);
         Statement statement;
 
@@ -85,11 +85,12 @@ public class RepositorioProductosMySql
 
                 int idProducto = Integer.valueOf(rs.getString("id"));
                 String descripcion = rs.getString("descripcion");
-                String precio = rs.getString("precio");
+                double precio = rs.getDouble("precio");
                 boolean esAgregado = Boolean.valueOf("esAgregado");
-                
-
+                Producto producto = new Producto(idProducto, descripcion, precio, esAgregado);
+                return producto;
             }
+
 
         } catch (SQLException e) {
 
@@ -100,5 +101,6 @@ public class RepositorioProductosMySql
         
         return null;
     }
+    
     
 }

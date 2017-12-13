@@ -12,19 +12,16 @@ import Datos.RepositorioProductosMySql;
 import Modelo.ControladorRegistrarPedido;
 import Vistas.VentanaPrincipal;
 
-/**
- *
- * @author Ignacio Alvarez
- */
+
 public class Main 
 {
     public static void main(String[] arg)
     {
-        ControladorRegistrarPedido controlador = new ControladorRegistrarPedido(new NegocioMySQL());
-        controlador.getNegocio().inicializarMesas(RepositorioMesaMySql.getInstancia().getCantidadMesa());
+        //ControladorRegistrarPedido controlador = new ControladorRegistrarPedido(new NegocioMySQL());
         
-        RepositorioProductosMySql.getInstancia().getTodosProducto();
-        RepositorioMozoMySql.getInstancia().getMozos();
+        //controlador.getNegocio().inicializarMesas(RepositorioMesaMySql.getInstancia().getCantidadMesa());
+        //RepositorioProductosMySql.getInstancia().getTodosProducto();
+        //RepositorioMozoMySql.getInstancia().getMozos();
         
         VentanaPrincipal vp = new VentanaPrincipal();
         vp.setVisible(true);

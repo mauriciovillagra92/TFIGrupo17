@@ -48,7 +48,7 @@ public class NegocioEnMemoria implements Negocio
         listaProductos.add(p);
     }
     
-    @Override
+   // @Override
     public void inicializarMesas(int cantidad)
     {
         for(int i = 1; i<=cantidad;i++)
@@ -68,7 +68,7 @@ public class NegocioEnMemoria implements Negocio
     }
     
     @Override
-    public Mesa buscarMesa(int numero)
+    public Mesa getMesa(int numero)
     {
         for(Mesa m: listaMesas)
         {
@@ -78,7 +78,7 @@ public class NegocioEnMemoria implements Negocio
         return null;
     }
     @Override
-    public Mozo buscarMozo(int numero)
+    public Mozo getMozo(int numero)
     {
         for(Mozo m: listaMozos)
         {
@@ -97,7 +97,7 @@ public class NegocioEnMemoria implements Negocio
         }
         return null;
     }
-    @Override
+    /*@Override
     public ArrayList<Producto> filtrarCatalogo(String filtro)
     {
         ArrayList<Producto> listaAuxiliar = new ArrayList<>();
@@ -110,6 +110,6 @@ public class NegocioEnMemoria implements Negocio
         
         
         return listaAuxiliar;
-    }
+    }*/
 
 }

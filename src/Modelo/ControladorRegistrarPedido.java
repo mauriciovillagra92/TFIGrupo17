@@ -32,26 +32,19 @@ public class ControladorRegistrarPedido
         return negocio.getListaMesas().toArray();
     }
     
-    public void iniciarPedido(int numero)
+    public void iniciarPedido(int numMesa, int numMozo)
     {
-        Mesa mesaAux = null;
-        for(Mesa m: negocio.getListaMesas())
-        {
-            if(m.getNumero() == numero)
-            {
-                mesaAux = m;
-                break;
-            }
-        }
-        mesaAux.iniciarMesa();
-        
+        Mesa mesa = negocio.getMesa(numMesa);
+        Mozo mozo = negocio.getMozo(numMozo);
+        Pedido pedido = new Pedido(mozo,mesa);
+        pedido.setEstado("En curso");  
     }
-
-    public void cargarCatalogo(IVentanaPedido ventana)
+    public void agregarProducto(Pedido pedido,int codigoProducto,int cantidad)
     {
-        
+        Producto p = negocio.buscarProducto(codigoProducto);  
+        pedido.agregarLineaPedido(p, cantidad);
     }
-    public void cargarPedido(Mozo mozo, Mesa mesa, int cantidad, int cantProductos)
+    /*public void cargarPedido(Mozo mozo, Mesa mesa, int cantidad, int cantProductos)
     {
         if(mesa.isEstado())
         {
@@ -59,16 +52,15 @@ public class ControladorRegistrarPedido
             
         }
         
-    }
-    
-    public void agregarProducto(int numeroMesa,int codigoProducto,int cantidad)
+    }*/
+    /*public void cargarCatalogo(IVentanaPedido ventana)
     {
         Producto p = negocio.buscarProducto(codigoProducto);
         Mesa m = negocio.buscarMesa(numeroMesa);
         
         m.agregarLineaPedido(p, cantidad);
     }
-    
+    */
     public IVentanaPedido getVentana() {
         return ventana;
     }

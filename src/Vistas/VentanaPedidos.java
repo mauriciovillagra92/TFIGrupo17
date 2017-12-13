@@ -5,6 +5,7 @@
  */
 package Vistas;
 
+import Datos.NegocioMySQL;
 import Main.NegocioEnMemoria;
 import Modelo.ControladorRegistrarPedido;
 import Modelo.IVentanaPedido;
@@ -27,7 +28,7 @@ public class VentanaPedidos extends javax.swing.JFrame implements IVentanaPedido
         bandera = false;
         setModeloTabla();
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        controlador = new ControladorRegistrarPedido(new NegocioEnMemoria());
+        controlador = new ControladorRegistrarPedido(new NegocioMySQL());
         setControlador(controlador);
     }
 

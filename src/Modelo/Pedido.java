@@ -18,7 +18,7 @@ public class Pedido
     private Mesa mesa;
     private ArrayList<LineaPedido> listaLineaPedido;
     private Date fecha;
-
+    private String estado;
     public Pedido(Mozo mozo, Mesa mesa) 
     {
         this.mozo = mozo;
@@ -76,6 +76,12 @@ public class Pedido
         this.listaLineaPedido = listaProductos;
     }
 
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+    public String getEstado() {
+        return estado;
+    }
     public Date getFecha() {
         return fecha;
     }
@@ -83,6 +89,8 @@ public class Pedido
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
+
+
 }
 
 

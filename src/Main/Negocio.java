@@ -16,13 +16,13 @@ import java.util.ArrayList;
  */
 public interface Negocio {
 
-    Mesa buscarMesa(int numero);
+    Mesa getMesa(int numero);
 
-    Mozo buscarMozo(int numero);
+    Mozo getMozo(int numero);
 
     Producto buscarProducto(int id);
 
-    ArrayList<Producto> filtrarCatalogo(String filtro);
+   // ArrayList<Producto> filtrarCatalogo(String filtro);
 
     ArrayList<Mesa> getListaMesas();
 
@@ -30,6 +30,6 @@ public interface Negocio {
 
     ArrayList<Producto> getListaProductos();
 
-    void inicializarMesas(int cantidad);
+    //void inicializarMesas(int cantidad);
     
 }

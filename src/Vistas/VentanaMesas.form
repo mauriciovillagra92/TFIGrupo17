@@ -74,9 +74,7 @@
                       <Component id="btnFiltrar" min="-2" pref="104" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
-                      <Component id="btnLiberar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="406" max="-2" attributes="0"/>
                       <Component id="btnVolver" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -113,10 +111,7 @@
                   <Component id="btnIniciar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnLiberar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnVolver" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <Component id="btnVolver" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="23" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -271,11 +266,6 @@
     <Component class="javax.swing.JButton" name="btnFinalizar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Finalizar Pedido"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnLiberar">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Liberar Mesas"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnVolver">

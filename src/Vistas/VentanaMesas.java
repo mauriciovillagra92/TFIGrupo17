@@ -5,7 +5,7 @@
  */
 package Vistas;
 
-import org.jdesktop.swingx.prompt.PromptSupport;
+import org.jdesktop.swingx.prompt.PromptSupport;//??
 
 /**
  *
@@ -43,7 +43,6 @@ public class VentanaMesas extends javax.swing.JFrame {
         btnIniciar = new javax.swing.JButton();
         btnAgregar = new javax.swing.JButton();
         btnFinalizar = new javax.swing.JButton();
-        btnLiberar = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
 
         jLabel1.setText("jLabel1");
@@ -103,8 +102,6 @@ public class VentanaMesas extends javax.swing.JFrame {
 
         btnFinalizar.setText("Finalizar Pedido");
 
-        btnLiberar.setText("Liberar Mesas");
-
         btnVolver.setText("Volver");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,9 +149,7 @@ public class VentanaMesas extends javax.swing.JFrame {
                         .addGap(65, 65, 65)
                         .addComponent(btnFiltrar, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(152, 152, 152)
-                        .addComponent(btnLiberar)
-                        .addGap(155, 155, 155)
+                        .addGap(406, 406, 406)
                         .addComponent(btnVolver)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -183,9 +178,7 @@ public class VentanaMesas extends javax.swing.JFrame {
                     .addComponent(btnFinalizar)
                     .addComponent(btnIniciar))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnLiberar)
-                    .addComponent(btnVolver))
+                .addComponent(btnVolver)
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -210,7 +203,6 @@ public class VentanaMesas extends javax.swing.JFrame {
     private javax.swing.JButton btnFiltrar;
     private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnIniciar;
-    private javax.swing.JButton btnLiberar;
     private javax.swing.JButton btnVolver;
     private javax.swing.JCheckBox checkEnCurso;
     private javax.swing.JCheckBox checkLibre;

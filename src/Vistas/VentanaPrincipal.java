@@ -5,6 +5,7 @@
  */
 package Vistas;
 
+import Datos.NegocioMySQL;
 import Main.NegocioEnMemoria;
 import Modelo.ControladorRegistrarPedido;
 import Modelo.IVentanaPedido;
@@ -19,7 +20,7 @@ public class VentanaPrincipal extends javax.swing.JFrame implements IVentanaPedi
     
     public VentanaPrincipal() 
     {
-        controlador = new ControladorRegistrarPedido(new NegocioEnMemoria());
+        controlador = new ControladorRegistrarPedido(new NegocioMySQL());
         setControlador(controlador);
         initComponents();
     }
