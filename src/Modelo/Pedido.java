@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public class Pedido 
 {

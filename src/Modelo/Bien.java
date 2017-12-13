@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public abstract class Bien 
 {

@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public class VentanaPedidos extends javax.swing.JFrame implements IVentanaPedido
 {

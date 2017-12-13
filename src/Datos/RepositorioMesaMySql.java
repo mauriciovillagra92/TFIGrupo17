@@ -11,7 +11,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public class RepositorioMesaMySql implements IRepositorioMesa
 {

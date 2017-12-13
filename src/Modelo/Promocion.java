@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public class Promocion extends Bien
 {

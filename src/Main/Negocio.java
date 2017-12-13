@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author maria
+ * @author 17
  */
 public interface Negocio {
 

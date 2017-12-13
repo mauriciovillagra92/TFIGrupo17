@@ -7,7 +7,7 @@ package Datos;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public interface IRepositorioMesa {
     

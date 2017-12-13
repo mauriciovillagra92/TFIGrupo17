@@ -12,7 +12,7 @@ import Modelo.IVentanaPedido;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public class VentanaPrincipal extends javax.swing.JFrame implements IVentanaPedido{
 

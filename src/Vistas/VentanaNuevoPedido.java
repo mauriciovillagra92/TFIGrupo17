@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public class VentanaNuevoPedido extends javax.swing.JDialog implements IVentanaPedido
 {

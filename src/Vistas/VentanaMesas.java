@@ -9,7 +9,7 @@ import org.jdesktop.swingx.prompt.PromptSupport;//??
 
 /**
  *
- * @author maria
+ * @author 17
  */
 public class VentanaMesas extends javax.swing.JFrame {
 

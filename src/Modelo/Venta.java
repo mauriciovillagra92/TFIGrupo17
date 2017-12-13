@@ -7,7 +7,7 @@ package Modelo;
 
 /**
  *
- * @author Ignacio Alvarez
+ * @author 17
  */
 public class Venta {
 

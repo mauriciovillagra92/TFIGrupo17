@@ -7,7 +7,7 @@ package Vistas;
 
 /**
  *
- * @author maria
+ * @author 17
  */
 public class VentanaAgregarProducto extends javax.swing.JFrame {
 
